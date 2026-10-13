@@ -6,10 +6,13 @@
 <title>لعبونة — سياسة الخصوصية</title>
 <meta name="description" content="سياسة الخصوصية في لعبة الأطفال لعبونة: لا نجمع أي بيانات شخصية عن الطفل أو وليّ أمره.">
 <link rel="icon" href="icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
+  @font-face { font-family: Tajawal; src: url("fonts/Tajawal-400.ttf") format("truetype"); font-weight: 400 500; font-display: swap; }
+  @font-face { font-family: Tajawal; src: url("fonts/Tajawal-700.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: Tajawal; src: url("fonts/Tajawal-800.ttf") format("truetype"); font-weight: 800; font-display: swap; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+  .contact a { overflow-wrap: anywhere; }
+
   :root {
     --bg: #ffe27a; --bg2: #fff3c4; --card: #fffdf5; --ink: #24392f; --muted: #5b6e63;
     --green: #2f7a5c; --green-soft: #dcefe5; --pink: #e86f8f; --line: #f0e2b0; --shadow: 0 10px 30px rgba(87, 70, 20, .12);
@@ -44,7 +47,7 @@
   .contact { text-align: center; background: var(--green); color: #fff; border-radius: 24px; padding: 22px; box-shadow: var(--shadow); }
   .contact a { color: #fff; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact { color: #12201a; } :root:not([data-theme="light"]) .contact a { color: #12201a; } }
-  .en { direction: ltr; text-align: left; font-family: "Nunito", system-ui, sans-serif; font-size: 16px; line-height: 1.7; }
+  .en { direction: ltr; text-align: left; font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.7; }
   .en h2 { font-size: 1.1rem; }
   details summary { cursor: pointer; font-weight: 800; font-size: 1.05rem; list-style: none; }
   details summary::-webkit-details-marker { display: none; }
@@ -62,41 +65,33 @@
       <li>بلا إعلانات</li>
       <li>بلا تتبّع</li>
       <li>بلا حسابات</li>
-      <li>بلا جمع بيانات</li>
+      <li>التقدّم محفوظ محليًا</li>
     </ul>
   </header>
 
   <section class="card">
-    <p class="lead">لا تجمع «لعبونة» أيّ معلومات شخصية عن طفلك أو عنك، ولا ترسلها إلى أيّ جهة. وُضعت هذه السياسة لتوضّح ذلك بالتفصيل.</p>
-
-    <h2><span>🐣</span>عن اللعبة</h2>
-    <p>«لعبونة» لعبة عربية موجّهة إلى الأطفال من سنّ الثالثة إلى السادسة، وتضمّ ألعاب المطبخ والتلوين وتركيب الصور.</p>
-
-    <h2><span>🚫</span>ما لا نجمعه</h2>
-    <ul class="points">
-      <li>لا تتطلّب اللعبة إنشاء حساب أو تسجيل الدخول، ولا تطلب اسمًا أو بريدًا إلكترونيًا أو رقم هاتف أو عمرًا أو موقعًا.</li>
-      <li>لا تستخدم معرّفات الجهاز ولا المعرّف الإعلاني.</li>
-      <li>لا تحتوي على إعلانات، ولا على أدوات تحليل أو قياس، ولا على مكتبات تابعة لجهات خارجية تجمع البيانات.</li>
-      <li>لا تتيح المحادثة أو التواصل مع لاعبين آخرين.</li>
-    </ul>
-
-    <h2><span>📱</span>ما يُحفظ على الجهاز فقط</h2>
-    <p>يُحفظ تقدّم الطفل (النجوم والعملات والإنجازات)، والشخصية التي اختارها، والإعدادات، والرسومات التي لوّنها، على الجهاز نفسه فقط، ولا يصل إلينا شيء منها. وتُحذف هذه المعلومات كلّها عند حذف اللعبة.</p>
-
-    <h2><span>🖼️</span>حفظ الرسومات في الصور</h2>
-    <p>على أجهزة آيفون وآيباد، عند الضغط على زرّ الحفظ تُضاف الرسمة إلى تطبيق الصور. ويطلب النظام إذنًا بإضافة الصور فقط، ولا تطّلع اللعبة على صورك ولا ترسلها إلى أيّ مكان.</p>
-
-    <h2><span>🛒</span>الشراء داخل اللعبة</h2>
-    <p>اللعبة مجانية، وتتضمّن عملية شراء اختيارية واحدة تُدفع مرة واحدة باسم «افتحوا كل لعبونة». تتمّ عملية الدفع بالكامل عبر متجر Apple App Store أو Google Play، وفق سياسة الخصوصية الخاصة بكلّ متجر. لا نتلقّى اسمك ولا بريدك الإلكتروني ولا بيانات الدفع، وإنما يتلقّى الجهاز من المتجر تأكيد الشراء ليفتح المحتوى.</p>
-
-    <h2><span>📶</span>الاتصال بالإنترنت</h2>
-    <p>تعمل اللعبة كاملةً دون اتصال بالإنترنت. ولا تتّصل إلا بالمتجر عند الشراء أو استرجاع الشراء أو تقييم اللعبة.</p>
-
-    <h2><span>🔒</span>حماية الأطفال</h2>
-    <p>تقع عمليات الشراء والتقييم والروابط الخارجية خلف بوابة مخصّصة لأولياء الأمور، وهي سؤال حسابي لا يستطيع الطفل الصغير حلّه. وبما أنّنا لا نجمع أيّ معلومات شخصية عن الأطفال، فلا توجد بيانات تتطلّب موافقة وليّ الأمر أو يمكن حذفها.</p>
-
-    <h2><span>📝</span>التعديلات على هذه السياسة</h2>
-    <p>إذا عُدّلت هذه السياسة، نحدّث هذه الصفحة وتاريخ «آخر تحديث». ولن تُضاف إلى اللعبة أيّ ميزة تجمع البيانات قبل تحديث هذه السياسة.</p>
+    <p class="lead">لا نجمع من خلال اللعب معلومات شخصية عن الطفل، ولا نستخدم إعلانات أو أدوات تتبّع. يُحفظ التقدّم والرسومات داخل الجهاز. توضح هذه السياسة أيضًا خدمات المتاجر والتواصل معنا.</p>
+    <h2><span aria-hidden="true">🐣</span>عن اللعبة</h2>
+    <p>«لعبونة» لعبة عربية للأطفال من سن الثالثة إلى السادسة، تتضمّن المطبخ والتلوين وتركيب الصور. تظهر باسم «لعبونة» وLaabouna، والعلامة المستخدمة داخل اللعبة هي Lulu Studio.</p>
+    <h2><span aria-hidden="true">🚫</span>البيانات أثناء اللعب</h2>
+    <p>لا تتطلّب اللعبة حسابًا، ولا تطلب اسم الطفل أو بريده الإلكتروني أو هاتفه أو موقعه. لا توجد محادثات أو إعلانات أو أدوات تحليل لسلوك الطفل، ولا نستخدم المعرّف الإعلاني. لا نرسل إلينا التقدّم أو الرسومات. اختيار فئة العمر في ركن الأهل هو إعداد محلي لتبسيط الأدوات؛ لا نطلب تاريخ ميلاد الطفل.</p>
+    <h2><span aria-hidden="true">📱</span>التخزين المحلي والحذف</h2>
+    <p>يُحفظ التقدّم والنجوم والعملات والإنجازات والشخصية والإعدادات والرسومات وحالة فتح المحتوى على الجهاز. يؤدي حذف اللعبة عادةً إلى إزالة بياناتها المحلية، لكن قد يحتفظ نظام التشغيل بنسخة احتياطية أو يستعيدها وفق إعداداتكم. يبقى سجل الشراء لدى المتجر، ويمكن استعادة الشراء بالحساب نفسه في المتجر نفسه. لا ينتقل الشراء بين متجر Apple وGoogle Play.</p>
+    <h2><span aria-hidden="true">🖼️</span>تصدير الرسومات إلى الصور</h2>
+    <p>عند اختيار الحفظ، تُضاف الرسمة إلى تطبيق الصور على آيفون وآيباد بإذن الإضافة فقط، أو إلى مجلد Pictures/Laabouna على Android 10 والأحدث. على إصدارات Android الأقدم تُحفظ داخل مجلد اللعبة. لا تقرأ اللعبة صوركم الشخصية. الصور المصدّرة خارج اللعبة تبقى بعد حذفها، وتُحذف من تطبيق الصور أو مدير الملفات. قد تزامن خدمة الصور أو النسخ الاحتياطي هذه الصور وفق إعداداتكم، ولا نتحكم في تلك الخدمات.</p>
+    <h2><span aria-hidden="true">🛒</span>الشراء وخدمات المتجر</h2>
+    <p>اللعبة مجانية وتتضمّن شراءً اختياريًا لمرة واحدة باسم «افتحوا كل لعبونة»، بلا اشتراك. يعالج Apple App Store أو Google Play الدفع وفق سياساته. تتبادل اللعبة مع المتجر بيانات المنتج والسعر والمعاملة اللازمة للتحقّق من الشراء وتأكيده واستعادته ومتابعة إلغائه أو سحبه. لا تُرسل اللعبة هذه البيانات إلى خادم تابع لنا، ولا تصل إلى بيانات بطاقتكم. قد تتيح لوحة المتجر للمطوّر سجلات الطلبات وتقارير المبيعات وفق شروط المتجر.</p>
+    <p><a href="https://www.apple.com/legal/privacy/" rel="noreferrer">سياسة خصوصية Apple</a> · <a href="https://policies.google.com/privacy" rel="noreferrer">سياسة خصوصية Google</a></p>
+    <h2><span aria-hidden="true">📶</span>الاتصال بالإنترنت</h2>
+    <p>يمكن اللعب دون اتصال بالإنترنت. تتواصل خدمات المتجر عند تشغيل اللعبة أو العودة إليها لتحميل السعر وتحديث حالة الشراء، وكذلك عند الشراء والاستعادة. فتح صفحة التقييم أو سياسة الخصوصية أو البريد الإلكتروني يستخدم تطبيقًا أو خدمة خارجية. قد تستمر صلاحية الشراء المحفوظة دون اتصال حتى تتوفر معلومات محدّثة من المتجر.</p>
+    <h2><span aria-hidden="true">🔒</span>بوابة الأهل</h2>
+    <p>تقع عمليات الشراء والتقييم والروابط الخارجية خلف سؤال حسابي موجّه لولي الأمر. هذه البوابة تقلّل الوصول غير المقصود، لكنها ليست إثباتًا للهوية أو ضمانًا بأن الطفل لا يستطيع تجاوزها. تبقى موافقات الشراء وإعدادات الرقابة الأبوية لدى المتجر تحت تحكّم الأسرة.</p>
+    <h2><span aria-hidden="true">✉️</span>البريد الإلكتروني والتقييمات</h2>
+    <p>إذا راسلتمونا، نتلقّى عنوان البريد ومحتوى الرسالة وأي مرفقات تختارون إرسالها لمعالجة الاستفسار. لا ترسلوا معلومات شخصية عن الطفل. يمكن طلب حذف المراسلات بالتواصل معنا؛ قد تبقى نسخ وفق آليات خدمة البريد أو متطلبات الاحتفاظ المعمول بها. إذا كتبتم تقييمًا في المتجر، يعالجه المتجر وقد ينشره مع بيانات ملفكم وفق إعداداته.</p>
+    <h2><span aria-hidden="true">🌐</span>موقع سياسة الخصوصية</h2>
+    <p>تستضيف GitHub Pages هذه الصفحة. قد يعالج مزوّد الاستضافة عنوان IP ومعلومات الطلب التقنية لتقديم الموقع وأمنه وفق <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">سياسة GitHub</a>. لا تحتوي الصفحة على تحليلات أو متتبّعات، وتُقدَّم الخطوط من الموقع نفسه دون طلبها من Google Fonts.</p>
+    <h2><span aria-hidden="true">📝</span>تحديث السياسة</h2>
+    <p>نحدّث هذه الصفحة وتاريخها عند تغيير ممارسات البيانات، ونوفّر أي إشعار أو موافقة لازمة قبل تفعيل جمع جديد للبيانات. للاستفسار أو طلب متعلق بالخصوصية، استخدموا البريد أدناه.</p>
   </section>
 
   <section class="contact">
@@ -106,29 +101,24 @@
   <section class="card en" lang="en" style="margin-top:22px">
     <details>
       <summary>Privacy Policy in English</summary>
-      <p><strong>Last updated: 13 October 2026.</strong> Laabouna does not collect or send any personal information about your child or you. It has no ads, no analytics and no tracking.</p>
-      <h2>About the app</h2>
-      <p>Laabouna is an Arabic game for children aged 3 to 6, with cooking, coloring and picture puzzles.</p>
-      <h2>What we do not collect</h2>
-      <ul class="points">
-        <li>No accounts or sign-in. We never ask for a name, email, phone number, age or location.</li>
-        <li>No device identifiers or advertising identifier.</li>
-        <li>No ads, no analytics or measurement tools, and no third-party SDKs that collect data.</li>
-        <li>No chat and no contact with other players.</li>
-      </ul>
-      <h2>What stays on the device</h2>
-      <p>Progress (stars, coins, achievements), the chosen character, settings and colored pictures are stored only on the device and never reach us. Deleting the app deletes them.</p>
-      <h2>Saving pictures to Photos</h2>
-      <p>On iPhone and iPad, tapping save adds the picture to the Photos app. The system asks for add-only permission; the app never reads your photos or sends them anywhere.</p>
-      <h2>In-app purchase</h2>
-      <p>The app is free with one optional one-time purchase, "Unlock all of Laabouna". Payment is handled entirely by the Apple App Store or Google Play under their own privacy policies. We do not receive your name, email or payment details; the device only receives the store's confirmation to unlock the content.</p>
-      <h2>Internet</h2>
-      <p>All play works offline. The app contacts the store only to buy, restore a purchase, or rate the app.</p>
-      <h2>Children's privacy</h2>
-      <p>Purchases, ratings and external links are behind a parental gate (a math question young children cannot answer). Because we collect no personal information from children, there is no data that needs parental consent or deletion.</p>
-      <h2>Changes</h2>
-      <p>If this policy changes, we update this page and its date. No data-collecting feature will be added before this policy is updated.</p>
-      <p>Contact: <a href="mailto:abdalmajeed76543@gmail.com">abdalmajeed76543@gmail.com</a></p>
+      <p><strong>Last updated: 13 October 2026.</strong> Laabouna is an Arabic game for children aged 3–6, with cooking, coloring and picture puzzles. The in-app brand is Lulu Studio.</p>
+      <h2>During play</h2>
+      <p>No accounts, advertising, behavioral analytics, advertising identifier, chat, or requests for a child's name, email, phone number or location. Progress and pictures are not sent to us. The parent's age-group choice is a local tools setting; we do not request a date of birth.</p>
+      <h2>Local storage and deletion</h2>
+      <p>Progress, rewards, character, settings, drawings and unlock status are stored on the device. Uninstalling normally removes app-local data, but the operating system may retain or restore backups according to your settings. The store retains purchase records. Restore uses the same account on the same store; purchases do not transfer between Apple and Google Play.</p>
+      <h2>Exported pictures</h2>
+      <p>On iPhone/iPad, saving adds a drawing to Photos with add-only permission. On Android 10+, it is saved to Pictures/Laabouna; older Android saves inside the app folder. The app does not read your personal photos. Pictures exported outside the app remain after uninstall and must be deleted from Photos or your file manager. Your photo or backup service may sync them according to your settings.</p>
+      <h2>Purchases and store services</h2>
+      <p>The free app has one optional non-consumable purchase, "Unlock all of Laabouna", with no subscription. Apple or Google handles payment. The app exchanges product, price and transaction information with the store to verify, acknowledge, restore and reconcile purchases and revocations. It does not send these records to our own server or access card details. Store dashboards may provide developers with order records and sales reports under their terms.</p>
+      <p><a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Apple privacy policy</a> · <a href="https://policies.google.com/privacy" rel="noreferrer">Google privacy policy</a></p>
+      <h2>Internet and parental gate</h2>
+      <p>Play works offline. Store services load prices and refresh purchases at startup/resume and during purchase/restore. Opening ratings, email or this policy uses an external app or service. Offline cached access may remain until store information is updated. Purchases, ratings and external links are behind a parent-oriented math question; it reduces accidental access but is not identity verification or a guarantee against child access. Store purchase approvals remain under your family's control.</p>
+      <h2>Support and reviews</h2>
+      <p>If you email us, we receive your address, message and attachments to answer your request. Please do not send personal information about children. Contact us to request deletion of correspondence; copies may remain under the email service's retention mechanisms or applicable requirements. Store reviews are processed by the store and may be published with your store profile information.</p>
+      <h2>This website</h2>
+      <p>GitHub Pages hosts this policy and may process IP addresses and technical request information for delivery/security under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub privacy statement</a>. This page has no analytics or trackers. Fonts are hosted here, without requests to Google Fonts.</p>
+      <h2>Updates and contact</h2>
+      <p>We update this page and its date when practices change, and provide any required notice or consent before enabling new collection. Contact: <a href="mailto:abdalmajeed76543@gmail.com">abdalmajeed76543@gmail.com</a>.</p>
     </details>
   </section>
 
